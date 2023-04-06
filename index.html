@@ -12,23 +12,139 @@
     </nav>
     <main>
         <h2>Vacation Contest Sign-Up Form</h2>
-        <form> <!-- TODO: Set Action and Method Properties -->
+        <form action="results.html" method="GET"> <!-- TODO: Set Action and Method Properties -->
             <div>
-                <label for="firstname">Your First Name</label>
+                <label for="firstname">First Name</label>
                 <input type="text" id="firstname" name="firstname">
                 <!-- TODO: Create a "lastname" input with type "text" -->
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" name="lastname">
+
             </div>
-            <!-- TODO: Make fieldset and legend -->
+            <!-- TODO: Make fieldset and legend -->   
             <!-- Todo: Email Input -->
             <!-- Todo: Street Address Input -->
             <!-- Todo: City, State, and Zip Inputs -->
-
+                <fieldset>
+                    <legend>
+                        Your Contact Info
+                    </legend>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email">
+                    <label for="address">Street Address</label>
+                    <input type="text" id="address" name="address">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city">
+                    <label for="state">State</label>
+                    <select id="state" name="state">
+                        <option value="AK">Alaska</option> 
+                        <option value="AL">Alabama</option>
+                        <option value="AK">Alaska</option>
+                        <option value="AZ">Arizona</option>
+                        <option value="AR">Arkansas</option>
+                        <option value="CA">California</option>
+                        <option value="CT">Connecticut</option>
+                        <option value="CO">Colorado</option>
+                        <option value="DE">Delaware</option>
+                        <option value="FL">Florida</option>
+                        <option value="GA">Georgia</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="IA">Iowa</option>
+                        <option value="ID">Idaho</option>
+                        <option value="IL">Illinois</option>
+                        <option value="IN">Indiana</option>
+                        <option value="KY">Kentucky</option>
+                        <option value="LA">Louisiana</option>
+                        <option value="MA">Massachussets</option>
+                        <option value="MD">Maryland</option>
+                        <option value="ME">Maine</option>
+                        <option value="MI">Michigan</option>
+                        <option value="MN">Minnesota</option>
+                        <option value="MO">Missouri</option>
+                        <option value="MS">Mississippi</option>
+                        <option value="MT">Montana</option>
+                        <option value="NC">North Carolina</option>
+                        <option value="ND">North Dakota</option>
+                        <option value="NE">Nebraska</option>
+                        <option value="NH">New Hampshire</option>
+                        <option value="NJ">New Jersey</option>
+                        <option value="NM">New Mexico</option>
+                        <option value="NV">Nevada</option>
+                        <option value="NY">New York</option>
+                        <option value="OH">Ohio</option>
+                        <option value="OK">Oklahoma</option>
+                        <option value="OR">Oregon</option>
+                        <option value="PA">Pennsylvania</option>
+                        <option value="RI">Rhode Island</option>
+                        <option value="SC">South Carolina</option>
+                        <option value="SD">South Dakota</option>
+                        <option value="TN">Tennessee</option>
+                        <option value="TX">Texas</option>
+                        <option value="UT">Utah</option>
+                        <option value="VA">Virginia</option>
+                        <option value="VT">Vermont</option>
+                        <option value="WA">Washington</option>
+                        <option value="WI">Wisconsin</option>
+                        <option value="WV">West Virginia</option>
+                        <option value="WY">Wyoming</option>
+                    </select>
+                    <label for="zip">Zipcode</label>
+                    <input type="text" id="zip" name="zip">
+                </fieldset>
             <!-- TODO: Second fieldset -->
             <!-- TODO: Radio buttons for selecting preferred destination -->
+
             <!-- TODO: Color input for selecting favorite color -->
             <!-- TODO: Checkboxes for selecting extra add-ons -->
+            <fieldset>
+                <legend>Preferences</legend>
+                <h3>Choose your location</h3>
+                <div>
+                    <input type="radio" value="aruba" id="aruba" name="location"> 
+                    <label for="aruba">Aruba</label>
+                </div>
+                <div>
+                    <input type="radio" value="japan" id="japan" name="location">
+                    <label for="japan">Japan</label>
+                </div>
+                <div>
+                    <input type="radio" id="new-zealand" value="new-zealand" name="location">
+                    <label for="new-zealand">New Zealand</label>
+                </div>
+                <div>
+                    <input id="reykjavik" type="radio" value="reykjavik" name="location">
+                    <label for="reykjavik">Reykjavik</label>
+                </div>
+                
+                <hr>
+                
+                
+                <label for="color">Favorite Color</label>
+                <input type="color" id="color" name="color">
+
+
+
+
+                <h3>Add-ons & Extras</h3>
+                <div>
+                    <input type="checkbox" id="spa" value="spa" name="extras">
+                    <label for="spa">Spa</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="balcony" value="balcony" name="extras">
+                    <label for="balcony">Balcony</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="breakfast"  value="breakfast" name="extras">
+                    <label for="breakfast">Breakfast</label>
+                </div>
+                
+                
+
+            </fieldset>
             
             <!-- TODO: Submit Button -->
+            <input type="submit" value="Enter the Contest">
         </form>
     </main>
     <footer>
